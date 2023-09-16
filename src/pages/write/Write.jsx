@@ -47,7 +47,7 @@ const Write = () => {
             placeholder="Title"
             type="text"
             autoFocus={true}
-            onChange={e=>setTitle(e.target.value)}
+            onChange={e=>setTitle(e.target.value)} 
           />
         </div>
         <div className="writeFormGroup">
