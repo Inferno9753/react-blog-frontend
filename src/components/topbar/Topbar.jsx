@@ -36,10 +36,10 @@ const Topbar = () => {
             </div>
             <div className="topRight">
                 {user ? (
-                    <Link className="link" to="/settings">
+                    <Link className="link" to="/settings"> 
                         <img
                             className="topImg"
-                            src={PF+user.profilePic}
+                            src={PF+user.profilePic} 
                             alt=""
                         />
                     </Link>

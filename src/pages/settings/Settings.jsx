@@ -54,7 +54,7 @@ export default function Settings() {
             <img
               src={file ? URL.createObjectURL(file) : PF+user.profilePic}
               alt=""
-            />
+            /> 
             <label htmlFor="fileInput">
               <i className="settingsPPIcon far fa-user-circle"></i>
             </label>

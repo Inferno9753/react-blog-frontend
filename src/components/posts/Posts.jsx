@@ -4,7 +4,7 @@ import './posts.css'
 const Posts = ({posts}) => {
     return (
         <div className='posts'>
-            {posts.map((p)=>(<Post post={p}/>))}
+            {posts.map((p,index)=>(<Post post={p} id={index}/>))}
         </div>
     )
 }
