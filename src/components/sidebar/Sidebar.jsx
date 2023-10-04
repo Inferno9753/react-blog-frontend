@@ -8,7 +8,7 @@ const Sidebar = () => {
 
   useEffect(() => {
     const getCats = async () => {
-      const res = await axios.get("/categories");
+      const res = await axios.get("https://react-blog-k0nh.onrender.com/api/categories");
       setCats(res.data);
     };
     getCats();

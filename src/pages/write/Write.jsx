@@ -23,11 +23,11 @@ const Write = () => {
       data.append("file", file);
       newPost.photo = filename;
       try {
-        await axios.post("/upload", data);
+        await axios.post("https://react-blog-k0nh.onrender.com/api/upload", data);
       } catch (err) {}
     }
     try {
-      const res = await axios.post("/posts", newPost);
+      const res = await axios.post("https://react-blog-k0nh.onrender.com/api/posts", newPost);
       window.location.replace("/post/" + res.data._id);
     } catch (err) {}
   };

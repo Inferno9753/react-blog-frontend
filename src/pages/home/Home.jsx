@@ -13,7 +13,7 @@ const Home = () => {
 
     useEffect(()=>{
         const fetchPosts = async () => {
-            const res = await axios.get("/posts"+search);
+            const res = await axios.get("https://react-blog-k0nh.onrender.com/api/posts"+search);
             setPosts(res.data);
           };
           fetchPosts();
